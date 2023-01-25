@@ -1,0 +1,210 @@
+.dashboard-container {
+  margin: 5%;
+  color: white;
+}
+.dashboard-title {
+  margin-bottom: 30px;
+}
+.chart-container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.chart {
+  padding: 10px;
+  display: block;
+  width: 45%;
+  margin-bottom: 20px;
+  padding: 0px 15px;
+  background-color: #435c70;
+  overflow-y: auto;
+}
+
+.chart h3 {
+  letter-spacing: 2px;
+  margin: 20px 0;
+}
+
+/* notification */
+
+.noti-container {
+  display: flex;
+  padding: 10px;
+  background-color: #4e657a;
+  color: #fff;
+  font-size: 95%;
+  margin: 15px;
+}
+
+.image {
+  width: 20%;
+  display: flex;
+  align-items: center;
+}
+img {
+  width: 91%;
+  height: 67%;
+  border-radius: 50%;
+}
+
+.notification-content {
+  /* background-color: red; */
+  width: 100%;
+  margin-left: 10px;
+  padding: 10px;
+}
+
+.message {
+  font-size: 15px;
+}
+
+.time {
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+/* orderList  */
+
+.orderlist {
+  background-color: #435c70;
+  width: 100%;
+  height: 40%;
+  margin: 20px 45px;
+}
+.orderlist table {
+    margin: 30px;
+    width: 95%;
+    overflow: hidden;
+    border-collapse: collapse;
+
+}
+.orderlist table th {
+    
+  border-top: 1px solid #415a70;
+  vertical-align: middle;
+  text-align: center;
+  color: white;
+  padding: 0.9rem 1rem;
+  border-bottom-width: 0px;
+  font-size: 14px;
+}
+.orderlist h1{
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+.orderlist table td {
+    font-size: 15px;
+  border-top: 1px solid #415a70;
+  vertical-align: middle;
+  text-align: center;
+  color: white;
+  padding: 0.9rem 1rem;
+  border-bottom-width: 0px;
+  background-color: #506478;
+}
+
+.orderlist table thead {
+  background-color: #56748f;
+  font-size: 16px;
+}
+
+.storage{
+  width: 100%;
+  height:80% ;
+   margin-bottom:20px;
+   text-align:center;
+   padding-left :80px;
+}
+
+
+.status-circle {
+  display: inline-block;
+  margin-right: 5px;
+  vertical-align: middle;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  margin-top: -3px;
+}
+
+.moving {
+  background-color: #9be64d;
+  box-shadow: 0 0 8px #9be64d, inset 0 0 8px #9be64d;
+}
+
+.pending {
+  background-color: #efc54b;
+  box-shadow: 0 0 8px #efc54b, inset 0 0 8px #efc54b;
+}
+.cancelled {
+  background-color: #da534f;
+  box-shadow: 0 0 8px #da534f, inset 0 0 8px #da534f;
+}
+.delivered {
+  background-color: #272c95;
+  box-shadow: 0 0 8px #272c95, inset 0 0 8px #272c95;
+}
+
+@media (width <= 400px){
+
+.chart-container{
+  flex-wrap: wrap;
+}
+.chart{
+  width: 100%;
+  height: 400px;
+  padding: 0;
+}
+.latesthit{
+  height: 300px;
+}
+.chart h3{
+  font-size: 12px;
+}
+img{
+  height: 48%;
+
+}
+.notification-content{
+  padding: 2px;
+  margin-left: 5px;
+}
+.storage{
+  width: 100%;
+  padding-left: 0;
+}
+.noti-container{
+  margin: 0;
+  margin-bottom: 10px;
+}
+}
+@media (width <800px) {
+  .chart-container{
+    flex-wrap: wrap;
+    flex-direction: column;
+    }
+    .chart{
+      width: 100%;
+      height: 400px;
+    }
+    .storage{
+text-align: center;
+width: 50%;
+margin-left: 23%;
+    }
+
+    .orderlist{
+      margin: 0;
+      
+    }
+    .orderlist table td {
+      padding: 2px;
+    }
+    
+    
+
+}

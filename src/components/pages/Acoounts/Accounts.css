@@ -1,0 +1,118 @@
+.account-container{
+    margin: 5% 10%;
+}
+
+.user-select{
+    padding: 30px;
+  background-color: #567089;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.user-option{
+    width: 40%;
+}
+.account-container main{
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+.account-left img{
+    width: 70%;
+    /* height: 50%; */
+    border-radius: 0;
+    margin: 30px 0;
+}
+.account-left{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    /* justify-conent:space-around; */
+    align-items: center;
+    background-color: #567089;
+    width: 30%;
+   
+}
+.account-left h2{
+    margin-top: 20px;
+}
+.input-left-box{
+display: flex;
+align-items: center;
+justify-content: space-around;
+}
+.account-btn{
+    margin-top: 27px;
+    width: 100%;
+    /* margin: 0; */
+    margin-right: 72px;
+    padding: 14px;
+}
+.account-btn:hover{
+    border:2px solid  chartreuse;
+    color: white;
+    background: transparent;
+    transition: linear 0.3s;
+    cursor: pointer;
+
+}
+
+.account-right{
+    color: white;
+    width: 60%;
+    background-color: #567089;
+    padding: 3% 4%;
+    gap: 10px;
+
+}
+
+
+@media (width <= 400px){
+
+    .account-container{
+        margin: 5% 2%;
+    }
+    .user-select{
+        height: 150px;
+        justify-content: space-around;
+        padding: 83px 10px;
+        margin-top: 50px;
+    }
+    .user-select label{
+font-size: 20px;
+    }
+    .user-option{
+        width: 90%;
+        margin-bottom: 30px;
+    }
+
+    main{
+        flex-direction: column;
+    }
+    .account-left{
+        width: 100%;
+        height: 500px;
+        /* min-height: 20%; */
+        justify-content: space-evenly;
+        margin-bottom: 50px;
+    }
+    .account-left h2{
+        margin-top: 0;
+    }
+    .account-left img{
+        width: 80%;
+        height: 70%;
+        margin: 0;
+    }
+    .account-right{
+        width: 100%;
+        padding: 5px;
+    }
+    .input-left-box{
+        flex-direction: column;
+        width: 100%;
+        align-items: inherit;
+        gap: 20px;
+        }
+}

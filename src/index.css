@@ -1,0 +1,28 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;1,400&display=swap');
+
+
+
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+ }
+body{
+  background-color: #43657A;
+  font-family: 'Roboto', sans-serif;
+
+}
+ li{
+  list-style: none;
+ }
+
+ a{
+  color: white;
+  text-decoration: none;
+ }
+
+ :root{
+  --backgroun-color : #567086
+}
