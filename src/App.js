@@ -27,6 +27,7 @@ function App() {
 
   };
 
+  // fetch all data
   useEffect(() => {
     getData()
 
